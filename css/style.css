@@ -12,34 +12,38 @@ span {
     color: yellow;
     font-family: 'Avenir';
 }
-
+/* General page styling */
 body {
     background-color: rgba(0, 0, 0, 0.861);
     padding-top: 50px;
     color: white;
     text-align: center;
     font-family: 'Avenir';
-} 
+}
 
 nav {
     display: flex;
-    justify-content: space-between; /* Align items to left and right */
-    align-items: center; /* Center vertically */
-    padding-left: 1cm;
+    justify-content: flex-start; /* Align navbar items to the left */
+    align-items: center;
+    padding-left: 20px;
     color: white;
-    word-spacing: 20px;
+    gap: 80px; /* Add space between the left navbar items */
 }
 
-.navbar-left {
+/* Ensure space between each navbar item */
+.navbar-item {
+    color: yellow; /* Set icon color to yellow */
+    margin-right: 20px; /* Space between each icon */
     display: flex;
-    gap: 10px; /* Space between the left navbar items */
+    align-items: center;
 }
 
-.navbar-right {
-    display: flex;
-    justify-content: flex-end; /* Push the resume button to the right */
+.navbar-item i {
+    font-size: 24px; /* Adjust icon size if necessary */
+    color: yellow;
 }
 
+/* Footer styling */
 footer {
     position: fixed;
     left: 0;
@@ -51,6 +55,22 @@ footer {
     font-family: 'Andale Mono';
     font-size: small;
 }
+
+/* Link styling */
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: dotted;
+}
+
+/* Typed.js text styling */
+.auto-type {
+    font-size: 24px;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: orangered;
+}
+
 
 a:link {
     color: green;
@@ -68,7 +88,7 @@ a:link {
     font-size: 24px;
     line-height: 1.5;
     white-space: nowrap;
-    color: orangered
+    color: orangered; /* Adjust text color */
 }
 
 /* Updated resume button */
@@ -84,7 +104,7 @@ a:link {
 }
 
 .resume-button:hover {
-    background-color: turquoise; /* Darker shade on hover */
+    background-color: turquoise; /* Change color on hover */
 }
 
 .resume-button i {
