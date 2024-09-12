@@ -14,9 +14,9 @@ span {
 }
 /* General page styling */
 body {
-    background-color: white;
+    background-color: black;
     padding-top: 50px;
-    color: black;
+    color: white;
     text-align: center;
     font-family: 'Avenir';
 }
