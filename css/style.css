@@ -8,7 +8,7 @@ container{
     justify-content: center;
 }
 span{
-    color: yellow;
+    color: rgb(226, 252, 34);
     font-family: 'Avenir';
 }
 body{
@@ -43,3 +43,20 @@ a:link {
     background-color: transparent;
     text-decoration: dotted;
 } 
+
+.fixed-area {
+    position: fixed;
+    /* top: 4px;  Adjust the vertical position as needed */
+    /* left: 20px; Adjust the horizontal position as needed */
+    /* width: 300px; Set a fixed width for the text area */
+    /* height: auto; */
+    /* background-color: rgba(255, 255, 255, 0.8); Optional: add background color to see the fixed area */
+    padding: 10px;
+    z-index: 100; /* Ensures it stays on top of other elements */
+}
+
+.auto-type {
+    font-size: 24px; /* Adjust the font size */
+    line-height: 1.5;
+    white-space: nowrap; /* Prevents the text from wrapping */
+}

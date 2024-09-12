@@ -43,26 +43,43 @@
 </nav>
 
    <body>
-      <br><br><br>
+      <br><br>
+      <div class = "fixed-area"></div>
       <h1> <span class = "auto-type"></span> </h1>
       
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
          var typed = new Typed(".auto-type", {
             strings: ["Hello", "नमस्ते", "Habari", "Bonjour", "ગુજરાતી"],
-            typeSpeed: 60,
-            backSpeed: 50,
+            typeSpeed: 100,
+            backSpeed: 70,
             loop: true
          })
       </script>
-      <br><br>
-      <p> Hi! I am Dev. I'm a Computer Science Gradute from Cardiff Uni! </p>
-      <p> I am also actively seeking <a href = "mailto: chhatbard@cardiff.ac.uk">Job Opportunities! Let's talk!</a></p>
+    <p> Hi! I am Dev. I'm a Computer Science Graduate from Cardiff University! </p>
+    <p> I am also actively seeking <a href="mailto:devchhatbar99@gmail.com">Job Opportunities! Let's talk!</a></p>
 
-      <img src="/images/grad.jpg" width="370" height="380">
-   </body>
+    <!-- Add an ID to the image for better selection -->
+    <img id="gradImage" src="/images/grad.jpg" width="370" height="380">
 
-   <footer div id = "footer">
-      <p>built by <a href ="https://github.com/devchh">dev</a> - 2024</a></p>
-   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Select the image element using its ID
+            gsap.from("#gradImage", {
+                duration: 4,          // duration of the animation
+                opacity: 0,            // start opacity
+                y: 100,                 // start position (50px below)
+                ease: "bounce.out"     // easing function
+            });
+        });
+    </script>
+</body>
+
+<footer id="footer">
+    <p>built by <a href="https://github.com/devchh">dev</a> - 2024</p>
+</footer>
+
 </html>
