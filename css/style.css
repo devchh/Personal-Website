@@ -14,9 +14,9 @@ span {
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.861);
+    background-color: white;
     padding-top: 50px;
-    color: white;
+    color: black;
     text-align: center;
     font-family: 'Avenir';
 } 
