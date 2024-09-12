@@ -1,4 +1,4 @@
-container{
+container {
     width: 100%;
     height: 60vh;
     background: black;
@@ -7,23 +7,37 @@ container{
     align-items: center;
     justify-content: center;
 }
-span{
-    color: rgb(226, 252, 34);
+
+span {
+    color: rgb(210, 5, 233);
     font-family: 'Avenir';
 }
-body{
-    background-color: black;
+
+body {
+    background-color: rgba(0, 0, 0, 0);
     padding-top: 50px;
-    color: turquoise;
+    color: black;
     text-align: center;
     font-family: 'Avenir';
-}
-nav{
-    align-items: top;
-    align-content: left;
-    color: white;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Center vertically */
     padding-left: 1cm;
+    color: white;
     word-spacing: 20px;
+}
+
+.navbar-left {
+    display: flex;
+    gap: 10px; /* Space between the left navbar items */
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end; /* Push the resume button to the right */
 }
 
 footer {
@@ -36,27 +50,43 @@ footer {
     text-align: center;
     font-family: 'Andale Mono';
     font-size: small;
-  }
- 
+}
+
 a:link {
     color: green;
     background-color: transparent;
     text-decoration: dotted;
-} 
+}
 
 .fixed-area {
     position: fixed;
-    /* top: 4px;  Adjust the vertical position as needed */
-    /* left: 20px; Adjust the horizontal position as needed */
-    /* width: 300px; Set a fixed width for the text area */
-    /* height: auto; */
-    /* background-color: rgba(255, 255, 255, 0.8); Optional: add background color to see the fixed area */
     padding: 10px;
-    z-index: 100; /* Ensures it stays on top of other elements */
+    z-index: 100;
 }
 
 .auto-type {
-    font-size: 24px; /* Adjust the font size */
+    font-size: 24px;
     line-height: 1.5;
-    white-space: nowrap; /* Prevents the text from wrapping */
+    white-space: nowrap;
+    color: orangered
+}
+
+/* Updated resume button */
+.resume-button {
+    display: inline-block;
+    background-color: #f2ff00; /* Button color */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: turquoise; /* Darker shade on hover */
+}
+
+.resume-button i {
+    margin-right: 8px; /* Spacing between icon and text */
 }
